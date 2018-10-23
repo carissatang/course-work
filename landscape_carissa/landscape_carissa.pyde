@@ -5,22 +5,13 @@
 cloud_one = 0
 cloud_two = 0
 sun = 640
-redd = 135
-greenn = 206
-bluee = 250
-
 
 def setup():
     size(640, 480)
  
 def draw():
-    global cloud_one, cloud_two, sun, redd, greenn, bluee
-    background(redd, greenn, bluee)
-    while greenn >= 0:
-        greenn -= 5
-    print(green)
-    while bluee >= 0:
-        bluee -= 20
+    global cloud_one, cloud_two, sun
+    background(135, 206, 250)
     if cloud_one >= 640:
         cloud_one = 0
     if cloud_two >= 640:
@@ -31,7 +22,7 @@ def draw():
     fill(200, 180, 0)
     ellipse(320, sun, 100, 100)
     if sun <= 0:
-        cloud = 640
+        sun = 640
     sun -= 1
     fill(255)
     ellipse(cloud_one + 5, 55, 80, 40)
