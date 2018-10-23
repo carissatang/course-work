@@ -49,7 +49,6 @@ def draw():
         redd = 0
         greenn = 0
         bluee = 0
-    print(redd, greenn, bluee, num)
     #SUN
     noStroke()
     fill(255, 255, 0)
@@ -61,7 +60,6 @@ def draw():
         bluee = 250
         sun = 0
     sun += 1.2
-    print(sun)
     #CLOUDS
     fill(255)
     ellipse(cloud_one + 5, 55, 80, 40)
